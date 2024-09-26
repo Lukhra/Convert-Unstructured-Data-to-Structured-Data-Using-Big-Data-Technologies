@@ -1,0 +1,20 @@
+Overview
+This project focuses on analyzing HTTP access logs to determine the most frequently accessed URLs for each HTTP method (such as GET, POST, PUT, DELETE) in the year 2023. By leveraging Apache Spark's resilient distributed datasets (RDDs), we can efficiently process and analyze large volumes of unstructured log data to extract meaningful insights. As the project leader, I collaborated closely with four team members to ensure the successful execution of our objectives.
+
+Objectives
+To identify the most common URLs accessed through different HTTP methods from a dataset of web server logs.
+To utilize Spark's RDD operators to perform data transformation and analysis efficiently.
+To provide clear and concise output that summarizes the findings for easy interpretation.
+Methodology
+Transforming the RDD: We transformed the RDD to group URLs under their respective HTTP methods. This step was crucial for isolating the counts for URLs accessed via each method.
+
+Finding Most Common URLs: We applied a reduction operation to find the URL with the highest count for each HTTP method. This involved comparing counts and selecting the maximum for each group.
+
+Results Collection and Display: Finally, we collected the results and displayed them in a readable format, summarizing the most common URL accessed for each HTTP method along with its access count.
+
+Tools and Technologies
+Apache Spark: For distributed data processing using RDDs.
+Python: As the programming language to implement the logic.
+Regular Expressions: (Optional) For parsing log lines if needed.
+Conclusion
+This project illustrates the power of big data technologies like Apache Spark in processing and analyzing large datasets efficiently. By extracting and summarizing key insights from HTTP access logs, organizations can better understand user behavior and improve their web services. Working as the project leader with my four team members, we successfully achieved our goals and gained valuable experience in data analysis and collaboration.
